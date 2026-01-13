@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Instala el Live Server en la compu del negocio -->
+
+<head>
+    <link rel="canonical" href="https://saintsolutions.bolt.host">
+
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#09f">
+
+    <style>
+        h1 {
+            color: blue;
+
+        }
+
+        body {
+            /* background: rgb(153 72 72 / 0.753); */
+            color: hsl(60, 44%, 23%);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', Helvetica, sans-serif;
+        }
+
+        a.link {
+            color: red;
+        }
+
+        #show {
+            background: rgb(50, 50, 117);
+            color: white;
+            border: 0;
+        }
+
+        #show:hover {
+            background: rgb(133, 66, 66);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .description {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Curso CSS</h1>
+        <h1>Otro h1</h1>
+        <nav>
+            <a class="link" href="#experiencia">Experiencia</a>
+            <a href="#habilidades">Habilidades</a>
+            <a class="link" href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <dialog>
+        <h1>Sabias que así puedo abrir un modal?</h1>
+        <p>y es nativo, y yo usando tremor...</p>
+        <button id="hide">Cerrar modal</button>
+    </dialog>
+    <button id="show">Ver más información</button>
+
+    <script>
+        window.show.addEventListener("click", () => {
+            window.dialog.showModal();
+        })
+
+        window.hide.addEventListener("click", () => {
+            window.dialog.close();
+        })
+    </script>
+    <p class="description">+3 años de experiencia en ventas y diseño de campañas estratégicas.</p>
+    <p>Ingeniero informático con <strong>experiencia en Automatización + IA</strong></p>
+
+    <main>
+
+    </main>
+
+
+</body>
+
+</html>
